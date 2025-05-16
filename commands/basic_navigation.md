@@ -53,3 +53,22 @@ Details:
   1. Create new empty files
   2. Update file access times
   3. Create multiple files at once
+
+## 4. File Type Identification
+### file
+- Determines file type by examining content
+- Shows MIME type and additional details
+- Useful for files without extensions
+
+Examples:
+```bash
+$ file banana.jpg     # Output: banana.jpg: JPEG image data, JFIF standard 1.01
+$ file /bin/bash      # Output: /bin/bash: ELF 64-bit LSB executable
+$ file index.html     # Output: index.html: HTML document, ASCII text
+$ file unknown_file   # Output: unknown_file: ASCII text
+```
+
+Use cases:
+1. Verify file types before processing
+2. Debug file extension mismatches
+3. Identify unknown/corrupted files
