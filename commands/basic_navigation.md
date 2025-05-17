@@ -48,7 +48,7 @@ Details:
 ## 3. File Creation
 ### touch
 - Creates empty files or updates timestamps
-- Example: `touch mysuperduperfile`
+- Example: `touch myfirstsuperduperfile`
 - Use cases:
   1. Create new empty files
   2. Update file access times
