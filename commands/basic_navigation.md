@@ -65,7 +65,6 @@ Examples:
 $ file banana.jpg     # Output: banana.jpg: JPEG image data, JFIF standard 1.01
 $ file /bin/bash      # Output: /bin/bash: ELF 64-bit LSB executable
 $ file index.html     # Output: index.html: HTML document, ASCII text
-$ file unknown_file   # Output: unknown_file: ASCII text
 ```
 
 Use cases:
