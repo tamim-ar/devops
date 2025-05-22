@@ -1,4 +1,4 @@
-**DevOps** is a combination of **"Development"** and **"Operations."** It’s a **set of practices, tools, and a cultural philosophy** that aims to:
+DevOps is a combination of "Development" and "Operations." It’s a set of practices, tools, and a cultural philosophy that aims to:
 
 * **Bridge the gap between software development and IT operations**
 * **Improve collaboration and communication**
