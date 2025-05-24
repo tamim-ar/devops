@@ -58,3 +58,10 @@ $ clear
 ```bash
 $ history | less
 ```
+
+
+
+4. Check recent commands:
+```bash
+$ history | less
+```
