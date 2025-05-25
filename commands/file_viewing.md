@@ -58,3 +58,24 @@ $ clear
 ```bash
 $ history | less
 ```
+
+## Common Use Cases
+1. View multiple files:
+```bash
+$ cat file1 file2 file3
+```
+
+2. Read long files:
+```bash
+$ less large_log_file.txt
+```
+
+3. Clear screen for better visibility:
+```bash
+$ clear
+```
+
+4. Check recent commands:
+```bash
+$ history | less
+```
