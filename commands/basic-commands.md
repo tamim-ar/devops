@@ -144,6 +144,19 @@ Example:
 $ whatis cat            # Shows brief description of cat command
 ```
 
+### alias and unalias
+- Creates or removes command shortcuts
+- Can be made persistent in ~/.bashrc
+- Commonly used for command customization
+
+Examples:
+```bash
+$ alias foobar='ls -la'     # Create alias for ls -la
+$ unalias foobar           # Remove the alias
+```
+
+> Note: Add aliases to ~/.bashrc file to make them permanent
+
 ## 3. File Operations Commands
 ### cp (Copy)
 - Copies files and directories
