@@ -134,6 +134,16 @@ Example:
 $ man ls                # Show manual for ls command
 ```
 
+### whatis
+- Shows one-line manual page descriptions
+- Quick way to get command purpose
+- Similar to man but more concise
+
+Example:
+```bash
+$ whatis cat            # Shows brief description of cat command
+```
+
 ## 3. File Operations Commands
 ### cp (Copy)
 - Copies files and directories
