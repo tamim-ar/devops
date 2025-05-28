@@ -124,6 +124,16 @@ $ help echo              # Built-in command help
 $ echo --help           # Command-specific help option
 ```
 
+### man (Manual)
+- Displays system manual pages
+- Provides detailed documentation for commands
+- Press 'q' to exit the manual page
+
+Example:
+```bash
+$ man ls                # Show manual for ls command
+```
+
 ## 3. File Operations Commands
 ### cp (Copy)
 - Copies files and directories
