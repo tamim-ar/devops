@@ -1,12 +1,14 @@
-# Basic Linux Navigation Commands
+# Linux Command Line Reference
 
-## 1. Current Directory Commands
-### pwd (Print Working Directory)
+## 1. System Navigation
+### Current Location
+#### pwd (Print Working Directory)
 - Shows your current location in the filesystem
 - Example: `pwd`
 - Output: `/home/user/documents`
 
-### cd (Change Directory)
+### Directory Movement
+#### cd (Change Directory)
 - `.` represents current directory
 - `..` moves up one directory
 - `~` represents home directory
@@ -20,8 +22,8 @@ cd ~     # Go to home directory
 cd -     # Go to previous directory
 ```
 
-## 2. Directory Listing Commands
-### ls (List Directory Contents)
+### Directory Listing
+#### ls (List Directory Contents)
 Basic listing variations:
 ```bash
 ls        # List current directory contents
@@ -45,8 +47,9 @@ Details:
    - Name
 5. `ls -la` - Combines long format with hidden files
 
-## 3. File Creation
-### touch
+## 2. File Management
+### File Creation and Identification
+#### touch
 - Creates empty files or updates timestamps
 - Example: `touch myfirstsuperduperfile`
 - Use cases:
@@ -54,8 +57,7 @@ Details:
   2. Update file access times
   3. Create multiple files at once
 
-## 4. File Type Identification
-### file
+#### file
 - Determines file type by examining content
 - Shows MIME type and additional details
 - Useful for files without extensions
@@ -72,17 +74,15 @@ Use cases:
 2. Debug file extension mismatches
 3. Identify unknown/corrupted files
 
-# Linux File Viewing and System Commands
-
-## 1. File Content Commands
-### cat (Concatenate)
+### File Content Viewing
+#### cat (Concatenate)
 - Displays content of files
 - Can display multiple files at once
 ```bash
 $ cat dogfile birdfile    # Shows contents of both files together
 ```
 
-### less (Pager)
+#### less (Pager)
 - Views file contents page by page
 - More advanced than `more` command
 ```bash
@@ -98,78 +98,8 @@ Navigation in less:
 - `/search` - Search for text
 - `h` - Display help
 
-## 2. System Commands
-### clear
-- Clears terminal screen
-```bash
-$ clear
-```
-
-### history
-- Shows command history
-- Lists previously executed commands
-```bash
-$ history
-```
-
-### help
-- Shows help information for commands
-- Two common ways to get help:
-  1. Using `help` command
-  2. Using `--help` option
-
-Examples:
-```bash
-$ help echo              # Built-in command help
-$ echo --help           # Command-specific help option
-```
-
-### man (Manual)
-- Displays system manual pages
-- Provides detailed documentation for commands
-- Press 'q' to exit the manual page
-
-Example:
-```bash
-$ man ls                # Show manual for ls command
-```
-
-### whatis
-- Shows one-line manual page descriptions
-- Quick way to get command purpose
-- Similar to man but more concise
-
-Example:
-```bash
-$ whatis cat            # Shows brief description of cat command
-```
-
-### alias and unalias
-- Creates or removes command shortcuts
-- Can be made persistent in ~/.bashrc
-- Commonly used for command customization
-
-Examples:
-```bash
-$ alias foobar='ls -la'     # Create alias for ls -la
-$ unalias foobar           # Remove the alias
-```
-
-> Note: Add aliases to ~/.bashrc file to make them permanent
-
-### exit and logout
-- Terminates current shell session
-- Both commands perform similar functions
-- Common for ending terminal sessions
-
-Examples:
-```bash
-$ exit                # Exit current shell
-$ logout             # Log out of current session
-```
-
-## 3. File Operations Commands
-### cp (Copy)
+### File Operations
+#### cp (Copy)
 - Copies files and directories
 - Common options:
   - `-i` Interactive mode (prompts before overwriting)
@@ -183,7 +113,7 @@ $ cp *.jpg /home/pete/Pictures              # Copy all jpg files
 $ cp mycoolfile /home/pete/Documents/cooldocs   # Copy to specific location
 ```
 
-### mv (Move/Rename)
+#### mv (Move/Rename)
 - Moves or renames files and directories
 - Common options:
   - `-i` Interactive mode (prompts before overwrite)
@@ -199,8 +129,8 @@ $ mv -i directory1 directory2           # Move with overwrite confirmation
 $ mv -b directory1 directory2           # Move with backup creation
 ```
 
-## 4. Directory Operations
-### mkdir (Make Directory)
+### Directory Management
+#### mkdir (Make Directory)
 - Creates new directories
 - Common options:
   - `-p` Create parent directories as needed
@@ -211,7 +141,7 @@ $ mkdir books paintings              # Create multiple directories
 $ mkdir -p books/hemmingway/favorites    # Create nested directories
 ```
 
-### rm (Remove) and rmdir
+#### rm and rmdir (Remove)
 - Removes files and directories
 - Common options:
   - `-f` Force removal without confirmation
@@ -227,8 +157,8 @@ $ rm -r directory          # Remove directory and contents
 $ rmdir directory          # Remove empty directory only
 ```
 
-## 5. File Search Operations
-### find
+### File Search
+#### find
 - Searches for files and directories
 - Common options:
   - `-name` Search by name
@@ -240,7 +170,80 @@ $ find /home -name puppies.jpg          # Find file by name
 $ find /home -type d -name MyFolder     # Find directory by name
 ```
 
-## Common Use Cases
+## 3. System Utilities
+### Help and Documentation
+#### help
+- Shows help information for commands
+- Two common ways to get help:
+  1. Using `help` command
+  2. Using `--help` option
+
+Examples:
+```bash
+$ help echo              # Built-in command help
+$ echo --help           # Command-specific help option
+```
+
+#### man (Manual)
+- Displays system manual pages
+- Provides detailed documentation for commands
+- Press 'q' to exit the manual page
+
+Example:
+```bash
+$ man ls                # Show manual for ls command
+```
+
+#### whatis
+- Shows one-line manual page descriptions
+- Quick way to get command purpose
+- Similar to man but more concise
+
+Example:
+```bash
+$ whatis cat            # Shows brief description of cat command
+```
+
+### Terminal Management
+#### clear
+- Clears terminal screen
+```bash
+$ clear
+```
+
+#### history
+- Shows command history
+- Lists previously executed commands
+```bash
+$ history
+```
+
+### Session Control
+#### alias and unalias
+- Creates or removes command shortcuts
+- Can be made persistent in ~/.bashrc
+- Commonly used for command customization
+
+Examples:
+```bash
+$ alias foobar='ls -la'     # Create alias for ls -la
+$ unalias foobar           # Remove the alias
+```
+
+> Note: Add aliases to ~/.bashrc file to make them permanent
+
+#### exit and logout
+- Terminates current shell session
+- Both commands perform similar functions
+- Common for ending terminal sessions
+
+Examples:
+```bash
+$ exit                # Exit current shell
+$ logout             # Log out of current session
+```
+
+## 4. Common Use Cases
 1. View multiple files:
 ```bash
 $ cat file1 file2 file3
