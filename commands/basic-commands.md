@@ -143,6 +143,34 @@ $ mv -i directory1 directory2           # Move with overwrite confirmation
 $ mv -b directory1 directory2           # Move with backup creation
 ```
 
+## 4. Directory Operations
+### mkdir (Make Directory)
+- Creates new directories
+- Common options:
+  - `-p` Create parent directories as needed
+
+Examples:
+```bash
+$ mkdir books paintings              # Create multiple directories
+$ mkdir -p books/hemmingway/favorites    # Create nested directories
+```
+
+### rm (Remove) and rmdir
+- Removes files and directories
+- Common options:
+  - `-f` Force removal without confirmation
+  - `-i` Interactive mode (prompt before removal)
+  - `-r` Recursive removal (for directories)
+
+Examples:
+```bash
+$ rm file1                  # Remove a file
+$ rm -f file1              # Force remove without confirmation
+$ rm -i file               # Remove with confirmation
+$ rm -r directory          # Remove directory and contents
+$ rmdir directory          # Remove empty directory only
+```
+
 ## Common Use Cases
 1. View multiple files:
 ```bash
