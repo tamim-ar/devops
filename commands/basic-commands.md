@@ -157,6 +157,17 @@ $ unalias foobar           # Remove the alias
 
 > Note: Add aliases to ~/.bashrc file to make them permanent
 
+### exit and logout
+- Terminates current shell session
+- Both commands perform similar functions
+- Common for ending terminal sessions
+
+Examples:
+```bash
+$ exit                # Exit current shell
+$ logout             # Log out of current session
+```
+
 ## 3. File Operations Commands
 ### cp (Copy)
 - Copies files and directories
