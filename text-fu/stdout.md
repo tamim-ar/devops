@@ -38,3 +38,8 @@ $ echo Hello World >> peanuts.txt    # Appends to peanuts.txt
 1. The `>` operator will overwrite files without warning
 2. Some shells offer protection flags against overwriting
 3. Use `>>` when you want to preserve existing file content
+4. Always check file permissions before writing to files
+5. Use `cat` to view file contents after redirection    
+```bash
+$ cat peanuts.txt
+``` 
