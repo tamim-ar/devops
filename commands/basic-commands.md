@@ -112,6 +112,18 @@ $ clear
 $ history
 ```
 
+### help
+- Shows help information for commands
+- Two common ways to get help:
+  1. Using `help` command
+  2. Using `--help` option
+
+Examples:
+```bash
+$ help echo              # Built-in command help
+$ echo --help           # Command-specific help option
+```
+
 ## 3. File Operations Commands
 ### cp (Copy)
 - Copies files and directories
@@ -169,6 +181,19 @@ $ rm -f file1              # Force remove without confirmation
 $ rm -i file               # Remove with confirmation
 $ rm -r directory          # Remove directory and contents
 $ rmdir directory          # Remove empty directory only
+```
+
+## 5. File Search Operations
+### find
+- Searches for files and directories
+- Common options:
+  - `-name` Search by name
+  - `-type` Search by type (f for files, d for directories)
+
+Examples:
+```bash
+$ find /home -name puppies.jpg          # Find file by name
+$ find /home -type d -name MyFolder     # Find directory by name
 ```
 
 ## Common Use Cases
